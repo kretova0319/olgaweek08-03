@@ -4,89 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Виар1</title>
-    <style>
-        body{
-            max-width: 1440px;
-            min-width: 320px;
-            font-size: 20px;
-        }
-        .button__basket{
-            background-color: #5222D0;
-            color: white;
-            font-weight: bold;
-            border-radius: 30px;
-            font-size: 13px;
-            padding: 14px 33px 11px 16px;
-        }
-        .basket{
-            align-items: center;
-        }
-        .button__buy{
-            background-color: #5222D0;
-            color: white;
-            font-weight: bold;
-            border-radius: 100px;
-            font-size: 35px;
-            padding: 28px 90px 21px 33px;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="row  mt-5 d-flex">
-            <div class="col ps-0">
-                <div class="logo d-flex">
-                    <img src="images/logo.png" alt="">
-                    <h1 class="h6 fw-bold pb-0 mb-0">ВИАРУШКА</h1>
-                </div>
-            </div>
-            <div class="col text-end">
-                <button class="button__basket">КОРЗИНА
-                    <span class="basket"><img src="images/basket.png" alt=""></span>
-                </button>
-            </div>
-        </div> 
-    </div>
 
-    <main class="container">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
-            <div class="col-5 info">
-                <h1  class="h1 text-uppercase fw-bold mt-5">Виртуальная реальность без проводов</h1>
-                <p class="text mt-3">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
-                <button class="button__buy">КУПИТЬ
-                    <span><img src="images/card.png" alt=""></span>
-                </button>
-                <div class="nav mt-5 mb-5">
-                    <ul class="menu text-primary list-inline d-flex flex-wrap gap-4">
-                        <li>Возможности</li>
-                        <li>Где купить</li>
-                        <li>Доставка</li>
-                        <li>Помощь</li>
-                    </ul>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row header__wrapper mt-5 d-flex">
+                <div class="col logo ps-0 d-flex">
+                    <a href="/" class="logo__logo-icon">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <h1 class="logo__logo-title h6 fw-bold">ВИАРУШКА</h1>
+                </div>
+            
+                <div class="col header__button text-end">
+                    <button class="header__button-title">КОРЗИНА
+                        <span class="header__button-basket">
+                            <img src="images/basket.png" alt="">
+                        </span>
+                    </button>
                 </div>
             </div>
-            <div class="col-7 pic">
-                <div class="picback position-relative">
-                    <img src="images/picbig.png" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row main__wrapper row-cols-1 row-cols-sm-1 row-cols-md-2">
+                <div class="col-5 main__info">
+                    <h1 class="main__info-title h1 text-uppercase fw-bold mt-5">Виртуальная реальность без проводов</h1>
+                    <p class="main__info-text mt-3">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
+                    <button class="main__info-button">КУПИТЬ
+                        <span><img src="images/card.png" alt=""></span>
+                    </button>
+                    <nav class="main-nav mt-5">
+                        <ul class="main-nav__wrapper list-inline d-flex flex-wrap gap-4">
+                            <li class="main-nav__item">
+                                <a href="/" class="main-nav__link text-decoration-none text-black">Возможности</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="/" class="main-nav__link text-decoration-none text-black">Где купить</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="/" class="main-nav__link text-decoration-none text-black">Доставка</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="/" class="main-nav__link text-decoration-none text-black">Помощь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-7 pic">
+                    <div class="image img-fluid">
+                        <img src="images/picbig.png" alt="">
+                    </div>
                 </div>
             </div>
-            <!-- <div class="col-7 pic">
-                <div class="picback position-relative">
-                    <img src="images/background.png" alt="">
-                    <div class="picmain fixed-top fixed-end">
-                        <img class="mainpic"  src="images/guy.png" alt="">
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-7 pic">
-                <div class="picback position-relative">
-                    <img src="images/background.png" alt="">
-                    <div class="picmain position-absolut top-0 end-0">
-                        <img class="mainpic  position-absolut top-0 end-0"  src="images/guy.png" alt="">
-                    </div>
-                </div>
-            </div> -->
         </div>
     </main>
 </body>

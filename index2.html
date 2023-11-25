@@ -4,108 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Виар2</title>
-    <style>
-        body{
-            max-width: 1440px;
-            min-width: 320px;
-            font-family: ;
-            font-size: 20px;
-        }
-        .news {
-            background-color: #EC615B;
-        }
-        /* .card-footer{
-            background-color: #EC615B;
-        } */
-        
-        .button{
-            background-color: #5222D0;
-            color: white;
-            font-weight: bold;
-            border-radius: 30px;
-            font-size: 13px;
-            padding: 14px 33px 11px 16px;
-        }
-        .basket{
-            align-items: center;
-        }
-    </style>
+
 </head>
 <body>
-    <div class="container">
-        <div class="row  mt-5 d-flex">
-            <div class="col ps-0">
-                <div class="logo d-flex">
-                    <img src="images/logo.png" alt="">
-                    <h1 class="h6 fw-bold pb-0 mb-0">ВИАРУШКА</h1>
+    <header class="header">
+        <div class="container">
+            <div class="row header__wrapper mt-5 d-flex">
+                <div class="col header__logo ps-0 d-flex">
+                    <a href="/" class="header__logo-icon">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <h1 class="header__logo-title h6 fw-bold">ВИАРУШКА</h1>
+                </div>
+            
+                <div class="col header__button text-end">
+                    <button class="header__button-title">КОРЗИНА
+                        <span class="header__button-basket">
+                            <img src="images/basket.png" alt="">
+                        </span>
+                    </button>
                 </div>
             </div>
-            <div class="col text-end">
-                <button class="button">КОРЗИНА
-                    <span class="basket"><img src="images/basket.png" alt=""></span>
-                </button>
-            </div>
-        </div> 
-    </div>
-
+        </div>
+    </header>
+    
     <div class="container mt-5">
-        <h1 class="h1 fw-bold pb-3">ВОЗМОЖНОСТИ</h1>
+        <h1 class="h1 pb-3">ВОЗМОЖНОСТИ</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
             <div class="col">
-                <div class="card h-100 border-0">
-                    <img src="images/pic1.png" alt="">
-                    <h2 class="h4 fw-bold mt-3">БЕЗ ПРОВОДОВ</h2>
-                    <p class="card-text mt-2">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание, ни большое помещение, чтобы расставить трекеры.</p>
+                <div class="wireless-card h-100 border-0">
+                    <img class="wireless-card__pic" src="images/pic1.png" alt="">
+                    <h2 class="wireless-card__title h6 fw-bold mt-3">БЕЗ ПРОВОДОВ</h2>
+                    <p class="wireless-card__text mt-2">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание, ни большое помещение, чтобы расставить трекеры.</p>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 border-0">
-                    <img src="images/pic2.png" alt="">
-                    <h2 class="h4 fw-bold mt-2">БЕЗ КОМПЬЮТЕРА</h2>
-                    <p>Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+                <div class="compless-card h-100 border-0">
+                    <img class="compless-card__pic" src="images/pic2.png" alt="">
+                    <h2 class="compless-card__title h6 fw-bold mt-2">БЕЗ КОМПЬЮТЕРА</h2>
+                    <p class="compless-card__text mt-2">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 border-0">
-                    <img src="images/pic3.png" alt="">
-                    <h2 class="h4 fw-bold mt-3">ДО 10 ЧАСОВ РАБОТЫ</h2>
-                    <p>Несмотря на компактность и производительность, шлем может работать до 10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+                <div class="long-card h-100 border-0">
+                    <img class="long-card__pic" src="images/pic3.png" alt="">
+                    <h2 class="long-card__title h6 fw-bold mt-3">ДО 10 ЧАСОВ РАБОТЫ</h2>
+                    <p class="long-card__text mt-2">Несмотря на компактность и производительность, шлем может работать до 10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
                 </div>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
             <div class="col">
-                <div class="card h-100 border-0">
-                    <h2 class="h4 fw-bold mt-3">СОТНИ ИГР</h2>
-                    <p>Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</p>
+                <div class="games-card h-100 border-0">
+                    <h2 class="games-card__title h6 fw-bold mt-3">СОТНИ ИГР</h2>
+                    <p class="games-card__text mt-2">Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</p>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 border-0">
-                    <h2 class="h4 fw-bold mt-3">ПОЧТИ ДАРОМ</h2>
-                    <p>По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы существенно экономите на мощном компьютере.</p>
+                <div class="free-card h-100 border-0">
+                    <h2 class="free-card__title h6 fw-bold mt-3">ПОЧТИ ДАРОМ</h2>
+                    <p class="free-card__text mt-2">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы существенно экономите на мощном компьютере.</p>
                 </div>
             </div>
             <div class="col">
-                <div class="news card h-100 border-0 bg-background: #EC615B;">
-                    <h2 class="h4 fw-bold mt-3 p-3 text-white">НОВОСТИ</h2>
-                    <input type="email" class="form-control mt-2 ms-2 me-3" placeholder="Эл.почта">
-                    <button class="button">ПОДПИСАТЬСЯ</button>
-                    <!-- <div class="card-footer bg-white border-0 ps-0">
-                        <a href="#" class="btn mt-2 bg-danger color text-white fw-bold rounded-pill">ПОДПИСАТЬСЯ</a>
-                    </div> -->
+                <div class="sbscribe-card h-100 border-0">
+                    <h2 class="sbscribe-card__title h6 fw-bold mt-1 p-3 text-white">НОВОСТИ</h2>
+                    <div class="sbscribe-card__reaction">
+                        <input type="email" class="sbscribe__email ms-2 me-5" placeholder="Эл.почта">
+                        <button class="sbscribe__button-title mt-3 ms-2">ПОДПИСАТЬСЯ</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="nav mt-5">
-            <ul class="menu list-inline d-flex flex-wrap gap-4  ps-5">
-                <li>Возможности</li>
-                <li>Где купить</li>
-                <li>Доставка</li>
-                <li>Помощь</li>
+        <nav class="nav mt-5">
+            <ul class="nav__wrapper list-inline d-flex flex-wrap gap-4 ps-5">
+                <li class="nav__item">
+                    <a href="/" class="nav__link text-decoration-none text-black">Возможности</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/" class="nav__link text-decoration-none text-black">Где купить</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/" class="nav__link text-decoration-none text-black">Доставка</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/" class="nav__link text-decoration-none text-black">Помощь</a>
+                </li>
             </ul>
-        </div>
+        </nav>
     </div>
 </body>
 </html>
