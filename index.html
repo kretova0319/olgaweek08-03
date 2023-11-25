@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Виар1</title>
+    <style>
+        body{
+            max-width: 1440px;
+            min-width: 320px;
+            font-size: 20px;
+        }
+        .button__basket{
+            background-color: #5222D0;
+            color: white;
+            font-weight: bold;
+            border-radius: 30px;
+            font-size: 13px;
+            padding: 14px 33px 11px 16px;
+        }
+        .basket{
+            align-items: center;
+        }
+        .button__buy{
+            background-color: #5222D0;
+            color: white;
+            font-weight: bold;
+            border-radius: 100px;
+            font-size: 35px;
+            padding: 28px 90px 21px 33px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row  mt-5 d-flex">
+            <div class="col ps-0">
+                <div class="logo d-flex">
+                    <img src="images/logo.png" alt="">
+                    <h1 class="h6 fw-bold pb-0 mb-0">ВИАРУШКА</h1>
+                </div>
+            </div>
+            <div class="col text-end">
+                <button class="button__basket">КОРЗИНА
+                    <span class="basket"><img src="images/basket.png" alt=""></span>
+                </button>
+            </div>
+        </div> 
+    </div>
+
+    <main class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col-5 info">
+                <h1  class="h1 text-uppercase fw-bold mt-5">Виртуальная реальность без проводов</h1>
+                <p class="text mt-3">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
+                <button class="button__buy">КУПИТЬ
+                    <span><img src="images/card.png" alt=""></span>
+                </button>
+                <div class="nav mt-5 mb-5">
+                    <ul class="menu text-primary list-inline d-flex flex-wrap gap-4">
+                        <li>Возможности</li>
+                        <li>Где купить</li>
+                        <li>Доставка</li>
+                        <li>Помощь</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-7 pic">
+                <div class="picback position-relative">
+                    <img src="images/picbig.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="col-7 pic">
+                <div class="picback position-relative">
+                    <img src="images/background.png" alt="">
+                    <div class="picmain fixed-top fixed-end">
+                        <img class="mainpic"  src="images/guy.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-7 pic">
+                <div class="picback position-relative">
+                    <img src="images/background.png" alt="">
+                    <div class="picmain position-absolut top-0 end-0">
+                        <img class="mainpic  position-absolut top-0 end-0"  src="images/guy.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+</body>
+</html>
